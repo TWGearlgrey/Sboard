@@ -1,0 +1,1227 @@
+2023-10-20T14:53:38.199+09:00  INFO 12068 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.8 with PID 12068 (C:\Users\java\Desktop\Workspace\Spring\Sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\Sboard)
+2023-10-20T14:53:38.202+09:00  INFO 12068 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-20T14:53:38.329+09:00  INFO 12068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-20T14:53:38.329+09:00  INFO 12068 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-20T14:53:38.646+09:00  INFO 12068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-20T14:53:38.676+09:00  INFO 12068 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 25 ms. Found 4 JPA repository interfaces.
+2023-10-20T14:53:38.742+09:00  WARN 12068 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-20T14:53:39.018+09:00  INFO 12068 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-20T14:53:39.024+09:00  INFO 12068 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-20T14:53:39.024+09:00  INFO 12068 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-20T14:53:39.060+09:00  INFO 12068 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-20T14:53:39.060+09:00  INFO 12068 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 730 ms
+2023-10-20T14:53:39.140+09:00  INFO 12068 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-20T14:53:39.165+09:00  INFO 12068 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-20T14:53:39.167+09:00  INFO 12068 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-20T14:53:39.234+09:00  INFO 12068 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-20T14:53:39.301+09:00  INFO 12068 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-20T14:53:39.319+09:00  INFO 12068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-20T14:53:39.722+09:00  INFO 12068 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@55c4f3ed
+2023-10-20T14:53:39.724+09:00  INFO 12068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-20T14:53:39.810+09:00  WARN 12068 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-20T14:53:39.921+09:00  INFO 12068 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-20T14:53:40.273+09:00  INFO 12068 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-20T14:53:40.274+09:00  INFO 12068 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-20T14:53:40.515+09:00  WARN 12068 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-20T14:53:40.581+09:00  INFO 12068 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-20T14:53:40.659+09:00  INFO 12068 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@32e232e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4d2301fd, org.springframework.security.web.context.SecurityContextHolderFilter@7baec22f, org.springframework.security.web.header.HeaderWriterFilter@1eb1e39c, org.springframework.security.web.authentication.logout.LogoutFilter@4c9dad3e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@1148c770, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19d6c8ce, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@22d8435c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7a91074, org.springframework.security.web.access.ExceptionTranslationFilter@1f2b64b0, org.springframework.security.web.access.intercept.AuthorizationFilter@208dd9d7]
+2023-10-20T14:53:40.831+09:00  WARN 12068 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : Unable to start LiveReload server
+2023-10-20T14:53:40.839+09:00  WARN 12068 --- [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2023-10-20T14:53:40.840+09:00  INFO 12068 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-10-20T14:53:40.842+09:00  INFO 12068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-10-20T14:53:40.951+09:00  INFO 12068 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-10-20T14:53:40.956+09:00  INFO 12068 --- [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2023-10-20T14:53:40.970+09:00  INFO 12068 --- [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2023-10-20T14:53:40.991+09:00 ERROR 12068 --- [restartedMain] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2023-10-20T14:55:04.358+09:00  INFO 17048 --- [restartedMain] kr.co.sboard.SboardApplication           : Starting SboardApplication using Java 17.0.8 with PID 17048 (C:\Users\java\Desktop\Workspace\Spring\Sboard\build\classes\java\main started by java in C:\Users\java\Desktop\Workspace\Spring\Sboard)
+2023-10-20T14:55:04.359+09:00  INFO 17048 --- [restartedMain] kr.co.sboard.SboardApplication           : No active profile set, falling back to 1 default profile: "default"
+2023-10-20T14:55:04.487+09:00  INFO 17048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-10-20T14:55:04.487+09:00  INFO 17048 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-10-20T14:55:04.827+09:00  INFO 17048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-10-20T14:55:04.858+09:00  INFO 17048 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 26 ms. Found 4 JPA repository interfaces.
+2023-10-20T14:55:04.923+09:00  WARN 17048 --- [restartedMain] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[kr.co.sboard]' package. Please check your configuration.
+2023-10-20T14:55:05.196+09:00  INFO 17048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-10-20T14:55:05.202+09:00  INFO 17048 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-10-20T14:55:05.202+09:00  INFO 17048 --- [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.13]
+2023-10-20T14:55:05.237+09:00  INFO 17048 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-10-20T14:55:05.237+09:00  INFO 17048 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 750 ms
+2023-10-20T14:55:05.320+09:00  INFO 17048 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-10-20T14:55:05.346+09:00  INFO 17048 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.2.9.Final
+2023-10-20T14:55:05.347+09:00  INFO 17048 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000406: Using bytecode reflection optimizer
+2023-10-20T14:55:05.415+09:00  INFO 17048 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-20T14:55:05.481+09:00  INFO 17048 --- [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2023-10-20T14:55:05.496+09:00  INFO 17048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-10-20T14:55:05.735+09:00  INFO 17048 --- [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@144ba8e5
+2023-10-20T14:55:05.740+09:00  INFO 17048 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-10-20T14:55:05.796+09:00  WARN 17048 --- [restartedMain] org.hibernate.orm.deprecation            : HHH90000026: MySQL57Dialect has been deprecated; use org.hibernate.dialect.MySQLDialect instead
+2023-10-20T14:55:05.907+09:00  INFO 17048 --- [restartedMain] o.h.b.i.BytecodeProviderInitiator        : HHH000021: Bytecode provider name : bytebuddy
+2023-10-20T14:55:06.266+09:00  INFO 17048 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-10-20T14:55:06.267+09:00  INFO 17048 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-10-20T14:55:06.514+09:00  WARN 17048 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-10-20T14:55:06.582+09:00  INFO 17048 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-10-20T14:55:06.664+09:00  INFO 17048 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5531cf60, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@546ba355, org.springframework.security.web.context.SecurityContextHolderFilter@6a8efc53, org.springframework.security.web.header.HeaderWriterFilter@46f1492d, org.springframework.security.web.authentication.logout.LogoutFilter@53e519cc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@64cff19a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@e3a1784, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@67b6abc6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4c9dad3e, org.springframework.security.web.access.ExceptionTranslationFilter@138732d1, org.springframework.security.web.access.intercept.AuthorizationFilter@13325d3e]
+2023-10-20T14:55:06.844+09:00  INFO 17048 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-10-20T14:55:06.865+09:00  INFO 17048 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-10-20T14:55:06.870+09:00  INFO 17048 --- [restartedMain] kr.co.sboard.SboardApplication           : Started SboardApplication in 2.732 seconds (process running for 2.951)
+2023-10-20T14:55:18.276+09:00  INFO 17048 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-10-20T14:55:18.277+09:00  INFO 17048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-10-20T14:55:18.277+09:00  INFO 17048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2023-10-20T14:55:18.282+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /LotteOn/
+2023-10-20T14:55:18.293+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.306+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.w.s.HttpSessionRequestCache        : Saved request http://localhost:8080/LotteOn/?continue to session
+2023-10-20T14:55:18.306+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to http://localhost:8080/user/login
+2023-10-20T14:55:18.309+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /user/login
+2023-10-20T14:55:18.313+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /user/login
+2023-10-20T14:55:18.469+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.477+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:18.480+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:18.482+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:18.480+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:18.482+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:18.483+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:18.483+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:18.485+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:18.486+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:18.486+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:18.486+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:18.487+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:18.494+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.494+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.494+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.494+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.495+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.495+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.496+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:18.496+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:18.497+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:18.498+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:18.500+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:18.500+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.261+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /user/login
+2023-10-20T14:55:25.523+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Failed to find user 'user'
+2023-10-20T14:55:25.525+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /user/login?success=100
+2023-10-20T14:55:25.527+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /user/login?success=100
+2023-10-20T14:55:25.531+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /user/login?success=100
+2023-10-20T14:55:25.534+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:25.544+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:25.544+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:25.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:25.544+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:25.544+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:25.545+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:25.546+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:25.547+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.548+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.548+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.549+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.549+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:25.550+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.551+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.551+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:25.551+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:25.552+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:25.553+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:25.553+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2023-10-20T14:55:54.925+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing POST /user/login?success=100
+2023-10-20T14:55:55.074+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2023-10-20T14:55:55.075+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] .s.ChangeSessionIdAuthenticationStrategy : Changed session id from BD25B802CEA4090CE830F62E0A2B5141
+2023-10-20T14:55:55.076+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@19cd81fe]
+2023-10-20T14:55:55.076+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]
+2023-10-20T14:55:55.076+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /
+2023-10-20T14:55:55.078+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /
+2023-10-20T14:55:55.078+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.078+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /
+2023-10-20T14:55:55.085+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /article/list
+2023-10-20T14:55:55.085+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /article/list
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=132, parent=0, comment=0, cate=notice, title=1, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:46:18), ArticleDTO(no=130, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:05:04), ArticleDTO(no=129, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:04:44), ArticleDTO(no=128, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:47:36), ArticleDTO(no=127, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:16:46)]
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : notice
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 5
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:55:55.183+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:55:55.184+09:00  INFO 17048 --- [http-nio-8080-exec-2] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:55:55.335+09:00  WARN 17048 --- [http-nio-8080-exec-2] n.n.u.t.e.ExpressionProcessor            : Fragment expression "/index.html" is being wrapped as a Thymeleaf 3 fragment expression (~{...}) for backwards compatibility purposes.  This wrapping will be dropped in the next major version of the expression processor, so please rewrite as a Thymeleaf 3 fragment expression to future-proof your code.  See https://github.com/thymeleaf/thymeleaf/issues/451 for more information.
+2023-10-20T14:55:55.435+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:55.435+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:55.435+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:55.435+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:55.436+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:55.436+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:55.437+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:55.437+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:55.438+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.438+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.439+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.440+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.449+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:55:55.450+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:55:55.452+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:55.489+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:55.490+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:55.491+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.491+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.491+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:55.492+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:58.954+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /article/view?cate=notice&pg=1&no=130
+2023-10-20T14:55:58.955+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:58.955+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /article/view?cate=notice&pg=1&no=130
+2023-10-20T14:55:59.044+09:00  INFO 17048 --- [http-nio-8080-exec-10] kr.co.sboard.service.ArticleService      : testdebug_ : ArticleDTO(no=130, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:05:04)
+2023-10-20T14:55:59.061+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:59.063+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:55:59.063+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:59.064+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:59.065+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:59.065+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:55:59.065+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:55:59.067+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:55:59.068+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.070+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:59.071+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:55:59.073+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.073+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.074+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:59.074+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:59.075+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.077+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:59.077+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:55:59.078+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:55:59.080+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.082+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:55:59.082+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.083+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.084+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:55:59.090+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:55:59.091+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:55:59.093+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.458+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /
+2023-10-20T14:56:00.459+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.459+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /
+2023-10-20T14:56:00.460+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /article/list
+2023-10-20T14:56:00.461+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /article/list
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=132, parent=0, comment=0, cate=notice, title=1, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:46:18), ArticleDTO(no=130, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:05:04), ArticleDTO(no=129, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:04:44), ArticleDTO(no=128, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:47:36), ArticleDTO(no=127, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:16:46)]
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : notice
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 5
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:00.490+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:00.529+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:00.529+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:00.529+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:00.530+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:00.530+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:00.530+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:00.533+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.534+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.534+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:00.537+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:00.537+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:00.538+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:00.538+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:00.538+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:00.538+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:00.537+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:00.539+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:00.539+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:00.540+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.541+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.541+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.542+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.543+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.544+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:00.548+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:00.549+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:00.552+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.876+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=free
+2023-10-20T14:56:01.876+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.876+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=free
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=131, parent=0, comment=0, cate=free, title=00000000011111111112222222222233333333334444444444445555555555566666666666777777777778888888889999999991010101010101111111111111212121212121212121313131313131313141414141414141415151515151515151616161616, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:43:29), ArticleDTO(no=42, parent=0, comment=0, cate=free, title=“꽃게가 모든 것을 먹고 있다”…‘우린 축제 저긴 재앙’ [친절한 뉴스K], content=꽃게 철이 돌아왔습니다.
+
+인천 연평도에서는 내일부터 꽃게를 잡기 시작하고요.
+
+지난주 진작에 금어기가 해제된 충남 서해안에선, 이번 주말부터 축제를 여는 곳도 있습니다.
+
+지난해보다 수확량이 10% 더 늘었다는 소식도 들리는데요.
+
+그래서인지, 할인 행사하는 매장도 있습니다.
+
+그냥 쪄 먹어도 맛있고, 탕에 넣어 끓여 먹어도 풍미가 훌륭하죠.
+
+꽃게에는 타우린 성분이 많아 눈에도 좋고, 혈당이나 혈압을 낮춰 당뇨병이나 심장질환을 예방하는 데도 효능이 있는 것으로 알려져 있습니다.
+
+정말 없어서 못 먹는 꽃게, 그런데, "이 게가 모든 것을 파괴하고 재앙을 일으키는 중"이라며, 다른 세상 얘기처럼 골머리를 앓는 나라가 있습니다.
+
+이탈리아 동북부 베네토 주의 주지사가 취재진 앞에서 꺼내 들어 보인 건, 푸른 꽃게입니다.
+
+최근 이 지역 양식업계의 심각한 골칫거리인데요.
+
+개체 수가 너무 늘어났고, 날카로운 집게로 양식장 어망을 뜯어 애써 키운 조개 등을 잡아먹어 버린다고 합니다.
+
+[이탈리아 홍합 양식업자 : "꽃게가 모든 것을 먹고 있습니다. 동료 어부들도 아무것도 잡을 게 없다고 말합니다."]
+
+국가 차원의 '비상사태'라는 말까지 나왔습니다.
+
+이탈리아 정부는 290만 유로, 우리 돈 42억 원을 지원하며 포상금까지 걸었는데요.
+
+푸른 꽃게를 포획하고 전문적으로 폐기하는 사람에게 주겠다는 거죠.
+
+푸른 꽃게, 원래 대서양 서부에 서식하는데, 북미에서 유럽으로 항해하는 화물선을 타고, 이탈리아 해안이 있는 이 지중해에 퍼진 것으로 추정됩니다.
+
+문제는 이곳에 푸른 꽃게의 천적이 없다는 겁니다.
+
+빠른 속도로 이탈리아, 스페인 등의 연안으로 확산했죠.
+
+먹성도 엄청납니다.
+
+별명도 '바다 멧돼지'인데요.
+
+무게는 최대 1킬로그램까지 나가는데, 각종 조개는 물론 홍합과 굴까지 먹어치웁니다.
+
+이탈리아는 중국과 우리나라에 이어 세계 3위의 조개 생산국, 이 푸른 꽃게 때문에 양식업자와 어민들은 폐업 위기까지 처했다는데요.
+
+이러다 조개가 들어가는 봉골레 파스타, 못 먹는 것 아니냐는 말까지 나옵니다.
+
+어패류 요리가 발달했다지만, 이탈리아에서 꽃게는 그동안 조개와 비교하면 대중적인 식자재는 아니었는데요.
+
+이 생태계를 교란하는 외래종, 이탈리아의 대책은 결국, 역시 요리였습니다.
+
+새로운 메뉴를 개발해 식재료로 쓰자는 요식업계 분위기가 생겼습니다.
+
+[루카/레스토랑 운영 : "꽃게로 전채요리부터 1차, 2차까지 다양한 음식을 준비할 수 있습니다. 후식으로 어떻게 활용할지는 아직 고민 중입니다."]
+
+결국, 이 지역 푸른 꽃게의 천적은 사람뿐이니, 사람이 꽃게를 먹어치우는 게 최선이라는 거죠.
+
+그렇다 해도, 모든 꽃게를 먹어치우는 건 가능하지도 않습니다.
+
+심지어 이 게, 1년에 최대 200만 개의 알을 낳는다는 학자들의 추정도 있습니다.
+
+1인당 게를 가장 많이 먹는 나라가 우리나라로 알려져 있습니다.
+
+우리나라는 오히려 꽃게 보호한다고, 1년 중 금어기를 두고, 포획 시기를 정해 둘 정도죠.
+
+지구촌에서 꽃게를 두고 한쪽에선 축제, 한쪽에선 재앙이라는 상반된 상황이 빚어지고 있습니다.
+
+KBS 뉴스 오승목입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:04:48), ArticleDTO(no=41, parent=0, comment=0, cate=free, title=짙어가는 중국 ‘침체’ 그림자…‘유령’ 대형마트까지, content=다음 달 폐점을 앞둔 베이징 도심의 한 대형마트.
+
+상품 진열대가 텅 비었고, 바닥은 오물로 뒤덮였습니다.
+
+현재 운영 중인 대형마트인데, 물건을 채워놓지 않아 사실상 폐점 상태입니다.
+
+중국도 이미 온라인 쇼핑이 대세로 자리 잡은 상황.
+
+여기에 소비자들이 지갑까지 닫으면서 대형마트 폐점이 잇따르는 겁니다.
+
+[중국 소비자 : "(중국인들의 소비 심리가 위축됐나요?) 관계가 있을 거예요. 쇼핑은 주로 중장년층이 하는 것 같아요."]
+
+베이징의 랜드마크 상업건물도 사정은 마찬가집니다.
+
+이 블럭 1층에서만 10곳 가운데 5곳이 이렇게 문을 닫았습니다.
+
+개업하자마자 폐업한 업체도 있을 만큼 사무 공간 상황은 더 심각합니다.
+
+3천 개가 넘는 사무실에 공실이 늘다 보니, 임대료가 지난해보다 최대 40%까지 하락했습니다.
+
+[부동산 중개인 : "임대료가 낮아요 이미 최저점입니다. 3년 임대하면 두 달은 무료로 해드려요."]
+
+기업들이 휘청대면서 일자리 사정도 좋지 않습니다.
+
+아침마다 열리는 인력시장은 일자리를 찾는 사람들로 늘 북적입니다.
+
+[구인업체 관계자 : "올해는 일자리를 찾는 사람이 많네요. 실업자가 많아져서 그래요. 보통 월 50~70만 원짜리 일자리에요."]
+
+지난 6월 중국의 청년 실업률이 21.3%로 사상 최대치를 경신하자 중국 정부는 실업률 통계 발표를 중단했습니다.
+
+코로나 이후 일시적으로 늘었던 중국의 소매판매증가율도 다시 내리막길을 걸었고, 올 7월까지 상업용 주택 매매 면적은 마이너스로 역성장했습니다.
+
+중국 정부는 최근 기준금리를 인하한데 이어 주택담보대출 금리 인하까지 시사하며 경제 재건 의지를 내비치고 있습니다.
+
+베이징에서 KBS 뉴스 김효신입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:04), ArticleDTO(no=40, parent=0, comment=0, cate=free, title='국민연금 보험료율, 0.6%p씩 올려 12~18%로 상향'…보고서 공개, content=(서울=연합뉴스) 김병규 기자 = 국민연금 개혁안을 논의하는 정부 내 전문가위원회가 보험료율을 끌어올리고 지급 개시(수급 시작) 연령은 늦추는 내용의 보고서를 내놨다.
+
+국민연금의 기금 소진 우려를 덜기 위해 '더 많이' 연금 보험료를 내면서 '더 늦게' 연금 수급을 시작하자는 개혁안으로, 보장성을 의미하는 소득대체율(연금가입 기간의 평균 소득 대비 받게 될 연금액의 비율) 상향 제안은 논의가 파행되면서 결국 빠졌다.
+
+보건복지부 산하 전문가위원회인 국민연금 재정계산위원회와 기금운용발전전문위원회는 1일 서울 코엑스에서 공청회를 열고 이런 내용의 '국민연금 제도개선 방향', '기금운용부문 개선사항' 보고서 초안을 공개했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:28), ArticleDTO(no=39, parent=0, comment=0, cate=free, title=정부, 론스타 ISDS 판정 취소 신청…`판정부 월권·규칙위반`, content=정부가 1일 외국계 사모펀드 론스타와의 외환은행 매각 관련 국제투자분쟁(ISDS) 중재판정에 불복해 취소신청을 제기했다. , fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:07), ArticleDTO(no=38, parent=0, comment=0, cate=free, title=태풍 영향으로 내일까지 남부지방 비…그치면 다시 더위, content=(서울=연합뉴스) 홍준석 기자 = 제11호 태풍 하이쿠이 영향으로 2일 낮까지 남부지방을 중심으로 비가 온 뒤에는 서쪽 지역에 다시 더위가 찾아오겠다. 3일에는 서쪽 지역에, 4∼5일에는 태백산맥 동쪽에 또 비가 내리겠다.
+
+1일 기상청에 따르면 하이쿠이는 오전 9시 현재 일본 오키나와 남남동쪽 300㎞ 해상을 지나 시속 18㎞로 서북서진 중이다.
+
+하이쿠이는 대만 타이베이 북동쪽 해상을 지나서 4일 중국 푸저우 부근에 상륙하고 5일 열대저압부로 약해지겠다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:23), ArticleDTO(no=37, parent=0, comment=0, cate=free, title=前언론노조위원장 압수수색…김만배 인터뷰 후 금품수수 혐의(종합), content=(서울=연합뉴스) 이보배 조다운 기자 = 검찰이 신학림 전 언론노조위원장이 화천대유자산관리 대주주 김만배 씨와 윤석열 대통령의 부산저축은행 사건 수사 무마 의혹에 대한 허위 인터뷰를 해주고 금품을 수수한 정황을 포착해 1일 강제수사에 나섰다.
+
+서울중앙지검 반부패수사3부(강백신 부장검사)는 이날 오전 신 전 위원장의 배임수·증재 및 청탁금지법 위반 혐의와 관련해 그의 주거지와 사무실 등 총 2곳을 압수수색하고 있다.
+
+검찰에 따르면 신 전 위원장은 윤 대통령이 검사 시절 부산저축은행 '대출 브로커' 조우형 씨의 검찰 수사를 무마해줬다는 취지로 김씨와 허위 인터뷰를 한 혐의를 받는다.
+
+해당 인터뷰는 20대 대선을 사흘 앞둔 지난해 3월6일 뉴스타파가 공개하면서 내용이 알려졌다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:38), ArticleDTO(no=36, parent=0, comment=0, cate=free, title=野, `오염수-홍범도` 쌍끌이 공세…``尹정부, 日과 환상적 호흡``, content=(서울=연합뉴스) 고상민 정윤주 기자 = 더불어민주당은 1일 '일본 후쿠시마 원전 오염수 방류'와 '홍범도 장군 흉상 이전' 논란을 앞세워 정부를 향해 쌍끌이 공세를 가했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:29), ArticleDTO(no=35, parent=0, comment=0, cate=free, title=여야 정기국회 일정 합의…5~8일 대정부질문·내달 10~27일 국감, content=(서울=연합뉴스) 안채원 기자 = 국민의힘 이양수·더불어민주당 송기헌 원내수석부대표는 1일 국회 로텐더홀에서 제410회 정기국회 의사일정 합의문을 발표했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:51), ArticleDTO(no=34, parent=0, comment=0, cate=free, title=외국인 가사관리사 이르면 12월 시범도입…서울시에 100명 규모, content=(서울=연합뉴스) 한혜원 기자 = 이르면 올해 12월부터 가사와 육아를 돕는 외국인 가사관리사 100명이 서울시에 시범 도입된다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:41:26)]
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : free
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 33
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:01.924+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 4
+2023-10-20T14:56:01.925+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:01.925+09:00  INFO 17048 --- [http-nio-8080-exec-1] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:01.947+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:01.947+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:01.947+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:01.947+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:01.948+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:01.948+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:01.948+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:01.948+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:01.950+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.950+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.950+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.952+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.959+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:01.960+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:01.960+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:01.961+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:01.962+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:01.962+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.964+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.965+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.965+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:01.966+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.865+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=qna
+2023-10-20T14:56:02.866+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.866+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=qna
+2023-10-20T14:56:02.893+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : []
+2023-10-20T14:56:02.893+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : qna
+2023-10-20T14:56:02.893+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:02.893+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:02.894+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 0
+2023-10-20T14:56:02.894+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:02.894+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 0
+2023-10-20T14:56:02.894+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:02.895+09:00  INFO 17048 --- [http-nio-8080-exec-8] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:02.915+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:02.916+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:02.916+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:02.916+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:02.916+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:02.917+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:02.917+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:02.917+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:02.918+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:02.918+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:02.919+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:02.919+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.919+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:02.919+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.920+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:02.920+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:02.920+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:02.921+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:02.921+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.923+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.923+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.924+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.924+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.924+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:02.931+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:02.932+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:02.933+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.771+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=free
+2023-10-20T14:56:03.772+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.772+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=free
+2023-10-20T14:56:03.819+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=131, parent=0, comment=0, cate=free, title=00000000011111111112222222222233333333334444444444445555555555566666666666777777777778888888889999999991010101010101111111111111212121212121212121313131313131313141414141414141415151515151515151616161616, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:43:29), ArticleDTO(no=42, parent=0, comment=0, cate=free, title=“꽃게가 모든 것을 먹고 있다”…‘우린 축제 저긴 재앙’ [친절한 뉴스K], content=꽃게 철이 돌아왔습니다.
+
+인천 연평도에서는 내일부터 꽃게를 잡기 시작하고요.
+
+지난주 진작에 금어기가 해제된 충남 서해안에선, 이번 주말부터 축제를 여는 곳도 있습니다.
+
+지난해보다 수확량이 10% 더 늘었다는 소식도 들리는데요.
+
+그래서인지, 할인 행사하는 매장도 있습니다.
+
+그냥 쪄 먹어도 맛있고, 탕에 넣어 끓여 먹어도 풍미가 훌륭하죠.
+
+꽃게에는 타우린 성분이 많아 눈에도 좋고, 혈당이나 혈압을 낮춰 당뇨병이나 심장질환을 예방하는 데도 효능이 있는 것으로 알려져 있습니다.
+
+정말 없어서 못 먹는 꽃게, 그런데, "이 게가 모든 것을 파괴하고 재앙을 일으키는 중"이라며, 다른 세상 얘기처럼 골머리를 앓는 나라가 있습니다.
+
+이탈리아 동북부 베네토 주의 주지사가 취재진 앞에서 꺼내 들어 보인 건, 푸른 꽃게입니다.
+
+최근 이 지역 양식업계의 심각한 골칫거리인데요.
+
+개체 수가 너무 늘어났고, 날카로운 집게로 양식장 어망을 뜯어 애써 키운 조개 등을 잡아먹어 버린다고 합니다.
+
+[이탈리아 홍합 양식업자 : "꽃게가 모든 것을 먹고 있습니다. 동료 어부들도 아무것도 잡을 게 없다고 말합니다."]
+
+국가 차원의 '비상사태'라는 말까지 나왔습니다.
+
+이탈리아 정부는 290만 유로, 우리 돈 42억 원을 지원하며 포상금까지 걸었는데요.
+
+푸른 꽃게를 포획하고 전문적으로 폐기하는 사람에게 주겠다는 거죠.
+
+푸른 꽃게, 원래 대서양 서부에 서식하는데, 북미에서 유럽으로 항해하는 화물선을 타고, 이탈리아 해안이 있는 이 지중해에 퍼진 것으로 추정됩니다.
+
+문제는 이곳에 푸른 꽃게의 천적이 없다는 겁니다.
+
+빠른 속도로 이탈리아, 스페인 등의 연안으로 확산했죠.
+
+먹성도 엄청납니다.
+
+별명도 '바다 멧돼지'인데요.
+
+무게는 최대 1킬로그램까지 나가는데, 각종 조개는 물론 홍합과 굴까지 먹어치웁니다.
+
+이탈리아는 중국과 우리나라에 이어 세계 3위의 조개 생산국, 이 푸른 꽃게 때문에 양식업자와 어민들은 폐업 위기까지 처했다는데요.
+
+이러다 조개가 들어가는 봉골레 파스타, 못 먹는 것 아니냐는 말까지 나옵니다.
+
+어패류 요리가 발달했다지만, 이탈리아에서 꽃게는 그동안 조개와 비교하면 대중적인 식자재는 아니었는데요.
+
+이 생태계를 교란하는 외래종, 이탈리아의 대책은 결국, 역시 요리였습니다.
+
+새로운 메뉴를 개발해 식재료로 쓰자는 요식업계 분위기가 생겼습니다.
+
+[루카/레스토랑 운영 : "꽃게로 전채요리부터 1차, 2차까지 다양한 음식을 준비할 수 있습니다. 후식으로 어떻게 활용할지는 아직 고민 중입니다."]
+
+결국, 이 지역 푸른 꽃게의 천적은 사람뿐이니, 사람이 꽃게를 먹어치우는 게 최선이라는 거죠.
+
+그렇다 해도, 모든 꽃게를 먹어치우는 건 가능하지도 않습니다.
+
+심지어 이 게, 1년에 최대 200만 개의 알을 낳는다는 학자들의 추정도 있습니다.
+
+1인당 게를 가장 많이 먹는 나라가 우리나라로 알려져 있습니다.
+
+우리나라는 오히려 꽃게 보호한다고, 1년 중 금어기를 두고, 포획 시기를 정해 둘 정도죠.
+
+지구촌에서 꽃게를 두고 한쪽에선 축제, 한쪽에선 재앙이라는 상반된 상황이 빚어지고 있습니다.
+
+KBS 뉴스 오승목입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:04:48), ArticleDTO(no=41, parent=0, comment=0, cate=free, title=짙어가는 중국 ‘침체’ 그림자…‘유령’ 대형마트까지, content=다음 달 폐점을 앞둔 베이징 도심의 한 대형마트.
+
+상품 진열대가 텅 비었고, 바닥은 오물로 뒤덮였습니다.
+
+현재 운영 중인 대형마트인데, 물건을 채워놓지 않아 사실상 폐점 상태입니다.
+
+중국도 이미 온라인 쇼핑이 대세로 자리 잡은 상황.
+
+여기에 소비자들이 지갑까지 닫으면서 대형마트 폐점이 잇따르는 겁니다.
+
+[중국 소비자 : "(중국인들의 소비 심리가 위축됐나요?) 관계가 있을 거예요. 쇼핑은 주로 중장년층이 하는 것 같아요."]
+
+베이징의 랜드마크 상업건물도 사정은 마찬가집니다.
+
+이 블럭 1층에서만 10곳 가운데 5곳이 이렇게 문을 닫았습니다.
+
+개업하자마자 폐업한 업체도 있을 만큼 사무 공간 상황은 더 심각합니다.
+
+3천 개가 넘는 사무실에 공실이 늘다 보니, 임대료가 지난해보다 최대 40%까지 하락했습니다.
+
+[부동산 중개인 : "임대료가 낮아요 이미 최저점입니다. 3년 임대하면 두 달은 무료로 해드려요."]
+
+기업들이 휘청대면서 일자리 사정도 좋지 않습니다.
+
+아침마다 열리는 인력시장은 일자리를 찾는 사람들로 늘 북적입니다.
+
+[구인업체 관계자 : "올해는 일자리를 찾는 사람이 많네요. 실업자가 많아져서 그래요. 보통 월 50~70만 원짜리 일자리에요."]
+
+지난 6월 중국의 청년 실업률이 21.3%로 사상 최대치를 경신하자 중국 정부는 실업률 통계 발표를 중단했습니다.
+
+코로나 이후 일시적으로 늘었던 중국의 소매판매증가율도 다시 내리막길을 걸었고, 올 7월까지 상업용 주택 매매 면적은 마이너스로 역성장했습니다.
+
+중국 정부는 최근 기준금리를 인하한데 이어 주택담보대출 금리 인하까지 시사하며 경제 재건 의지를 내비치고 있습니다.
+
+베이징에서 KBS 뉴스 김효신입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:04), ArticleDTO(no=40, parent=0, comment=0, cate=free, title='국민연금 보험료율, 0.6%p씩 올려 12~18%로 상향'…보고서 공개, content=(서울=연합뉴스) 김병규 기자 = 국민연금 개혁안을 논의하는 정부 내 전문가위원회가 보험료율을 끌어올리고 지급 개시(수급 시작) 연령은 늦추는 내용의 보고서를 내놨다.
+
+국민연금의 기금 소진 우려를 덜기 위해 '더 많이' 연금 보험료를 내면서 '더 늦게' 연금 수급을 시작하자는 개혁안으로, 보장성을 의미하는 소득대체율(연금가입 기간의 평균 소득 대비 받게 될 연금액의 비율) 상향 제안은 논의가 파행되면서 결국 빠졌다.
+
+보건복지부 산하 전문가위원회인 국민연금 재정계산위원회와 기금운용발전전문위원회는 1일 서울 코엑스에서 공청회를 열고 이런 내용의 '국민연금 제도개선 방향', '기금운용부문 개선사항' 보고서 초안을 공개했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:28), ArticleDTO(no=39, parent=0, comment=0, cate=free, title=정부, 론스타 ISDS 판정 취소 신청…`판정부 월권·규칙위반`, content=정부가 1일 외국계 사모펀드 론스타와의 외환은행 매각 관련 국제투자분쟁(ISDS) 중재판정에 불복해 취소신청을 제기했다. , fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:07), ArticleDTO(no=38, parent=0, comment=0, cate=free, title=태풍 영향으로 내일까지 남부지방 비…그치면 다시 더위, content=(서울=연합뉴스) 홍준석 기자 = 제11호 태풍 하이쿠이 영향으로 2일 낮까지 남부지방을 중심으로 비가 온 뒤에는 서쪽 지역에 다시 더위가 찾아오겠다. 3일에는 서쪽 지역에, 4∼5일에는 태백산맥 동쪽에 또 비가 내리겠다.
+
+1일 기상청에 따르면 하이쿠이는 오전 9시 현재 일본 오키나와 남남동쪽 300㎞ 해상을 지나 시속 18㎞로 서북서진 중이다.
+
+하이쿠이는 대만 타이베이 북동쪽 해상을 지나서 4일 중국 푸저우 부근에 상륙하고 5일 열대저압부로 약해지겠다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:23), ArticleDTO(no=37, parent=0, comment=0, cate=free, title=前언론노조위원장 압수수색…김만배 인터뷰 후 금품수수 혐의(종합), content=(서울=연합뉴스) 이보배 조다운 기자 = 검찰이 신학림 전 언론노조위원장이 화천대유자산관리 대주주 김만배 씨와 윤석열 대통령의 부산저축은행 사건 수사 무마 의혹에 대한 허위 인터뷰를 해주고 금품을 수수한 정황을 포착해 1일 강제수사에 나섰다.
+
+서울중앙지검 반부패수사3부(강백신 부장검사)는 이날 오전 신 전 위원장의 배임수·증재 및 청탁금지법 위반 혐의와 관련해 그의 주거지와 사무실 등 총 2곳을 압수수색하고 있다.
+
+검찰에 따르면 신 전 위원장은 윤 대통령이 검사 시절 부산저축은행 '대출 브로커' 조우형 씨의 검찰 수사를 무마해줬다는 취지로 김씨와 허위 인터뷰를 한 혐의를 받는다.
+
+해당 인터뷰는 20대 대선을 사흘 앞둔 지난해 3월6일 뉴스타파가 공개하면서 내용이 알려졌다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:38), ArticleDTO(no=36, parent=0, comment=0, cate=free, title=野, `오염수-홍범도` 쌍끌이 공세…``尹정부, 日과 환상적 호흡``, content=(서울=연합뉴스) 고상민 정윤주 기자 = 더불어민주당은 1일 '일본 후쿠시마 원전 오염수 방류'와 '홍범도 장군 흉상 이전' 논란을 앞세워 정부를 향해 쌍끌이 공세를 가했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:29), ArticleDTO(no=35, parent=0, comment=0, cate=free, title=여야 정기국회 일정 합의…5~8일 대정부질문·내달 10~27일 국감, content=(서울=연합뉴스) 안채원 기자 = 국민의힘 이양수·더불어민주당 송기헌 원내수석부대표는 1일 국회 로텐더홀에서 제410회 정기국회 의사일정 합의문을 발표했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:51), ArticleDTO(no=34, parent=0, comment=0, cate=free, title=외국인 가사관리사 이르면 12월 시범도입…서울시에 100명 규모, content=(서울=연합뉴스) 한혜원 기자 = 이르면 올해 12월부터 가사와 육아를 돕는 외국인 가사관리사 100명이 서울시에 시범 도입된다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:41:26)]
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : free
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 33
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:03.821+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 4
+2023-10-20T14:56:03.822+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:03.822+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:03.859+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:03.860+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:03.866+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.867+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.867+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:03.867+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:03.868+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.868+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.869+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:03.869+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:03.869+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.870+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:03.870+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:03.870+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:03.871+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:03.872+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.872+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.873+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:03.886+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:03.887+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:03.888+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.049+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=qna
+2023-10-20T14:56:32.050+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.050+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=qna
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : []
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : qna
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 0
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 0
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:32.076+09:00  INFO 17048 --- [http-nio-8080-exec-10] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:32.098+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:32.098+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:32.099+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:32.099+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:32.100+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:32.100+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:32.101+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:32.101+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:32.102+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:32.102+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:32.102+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:32.103+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:32.103+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.104+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:32.104+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.105+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:32.105+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:32.106+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.106+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:32.108+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.109+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.111+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.111+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.112+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.116+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:32.116+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:32.118+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.622+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=faq
+2023-10-20T14:56:32.623+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.623+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=faq
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=133, parent=0, comment=0, cate=faq, title=faq, content=faq, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:50:54)]
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : faq
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 1
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:32.650+09:00  INFO 17048 --- [http-nio-8080-exec-4] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:32.689+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:32.689+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:32.689+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:32.690+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:32.691+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:32.691+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:32.691+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:32.691+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:32.692+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:32.692+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.693+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.693+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:32.693+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:32.691+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:32.694+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:32.694+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.694+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:32.695+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:32.695+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:32.696+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.698+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.699+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.699+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.700+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:32.710+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:32.710+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:32.712+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.212+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=event
+2023-10-20T14:56:33.213+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.213+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=event
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : []
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : event
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 0
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 0
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:33.238+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:33.255+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:33.256+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:33.257+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:33.257+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:33.257+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:33.257+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:33.257+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.259+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:33.259+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:33.259+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.260+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.260+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.260+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:33.260+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.260+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:33.261+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.261+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.262+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.267+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:33.268+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:33.269+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.753+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=notice
+2023-10-20T14:56:33.754+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.754+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=notice
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=132, parent=0, comment=0, cate=notice, title=1, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:46:18), ArticleDTO(no=130, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:05:04), ArticleDTO(no=129, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:04:44), ArticleDTO(no=128, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:47:36), ArticleDTO(no=127, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:16:46)]
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : notice
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 5
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:33.782+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:33.822+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:33.822+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:33.822+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:33.822+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:33.822+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:33.823+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:33.824+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.826+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.828+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:33.828+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:33.828+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:33.828+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:33.829+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.830+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:33.838+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:33.839+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:33.840+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.308+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=free
+2023-10-20T14:56:34.309+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.309+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=free
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=131, parent=0, comment=0, cate=free, title=00000000011111111112222222222233333333334444444444445555555555566666666666777777777778888888889999999991010101010101111111111111212121212121212121313131313131313141414141414141415151515151515151616161616, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:43:29), ArticleDTO(no=42, parent=0, comment=0, cate=free, title=“꽃게가 모든 것을 먹고 있다”…‘우린 축제 저긴 재앙’ [친절한 뉴스K], content=꽃게 철이 돌아왔습니다.
+
+인천 연평도에서는 내일부터 꽃게를 잡기 시작하고요.
+
+지난주 진작에 금어기가 해제된 충남 서해안에선, 이번 주말부터 축제를 여는 곳도 있습니다.
+
+지난해보다 수확량이 10% 더 늘었다는 소식도 들리는데요.
+
+그래서인지, 할인 행사하는 매장도 있습니다.
+
+그냥 쪄 먹어도 맛있고, 탕에 넣어 끓여 먹어도 풍미가 훌륭하죠.
+
+꽃게에는 타우린 성분이 많아 눈에도 좋고, 혈당이나 혈압을 낮춰 당뇨병이나 심장질환을 예방하는 데도 효능이 있는 것으로 알려져 있습니다.
+
+정말 없어서 못 먹는 꽃게, 그런데, "이 게가 모든 것을 파괴하고 재앙을 일으키는 중"이라며, 다른 세상 얘기처럼 골머리를 앓는 나라가 있습니다.
+
+이탈리아 동북부 베네토 주의 주지사가 취재진 앞에서 꺼내 들어 보인 건, 푸른 꽃게입니다.
+
+최근 이 지역 양식업계의 심각한 골칫거리인데요.
+
+개체 수가 너무 늘어났고, 날카로운 집게로 양식장 어망을 뜯어 애써 키운 조개 등을 잡아먹어 버린다고 합니다.
+
+[이탈리아 홍합 양식업자 : "꽃게가 모든 것을 먹고 있습니다. 동료 어부들도 아무것도 잡을 게 없다고 말합니다."]
+
+국가 차원의 '비상사태'라는 말까지 나왔습니다.
+
+이탈리아 정부는 290만 유로, 우리 돈 42억 원을 지원하며 포상금까지 걸었는데요.
+
+푸른 꽃게를 포획하고 전문적으로 폐기하는 사람에게 주겠다는 거죠.
+
+푸른 꽃게, 원래 대서양 서부에 서식하는데, 북미에서 유럽으로 항해하는 화물선을 타고, 이탈리아 해안이 있는 이 지중해에 퍼진 것으로 추정됩니다.
+
+문제는 이곳에 푸른 꽃게의 천적이 없다는 겁니다.
+
+빠른 속도로 이탈리아, 스페인 등의 연안으로 확산했죠.
+
+먹성도 엄청납니다.
+
+별명도 '바다 멧돼지'인데요.
+
+무게는 최대 1킬로그램까지 나가는데, 각종 조개는 물론 홍합과 굴까지 먹어치웁니다.
+
+이탈리아는 중국과 우리나라에 이어 세계 3위의 조개 생산국, 이 푸른 꽃게 때문에 양식업자와 어민들은 폐업 위기까지 처했다는데요.
+
+이러다 조개가 들어가는 봉골레 파스타, 못 먹는 것 아니냐는 말까지 나옵니다.
+
+어패류 요리가 발달했다지만, 이탈리아에서 꽃게는 그동안 조개와 비교하면 대중적인 식자재는 아니었는데요.
+
+이 생태계를 교란하는 외래종, 이탈리아의 대책은 결국, 역시 요리였습니다.
+
+새로운 메뉴를 개발해 식재료로 쓰자는 요식업계 분위기가 생겼습니다.
+
+[루카/레스토랑 운영 : "꽃게로 전채요리부터 1차, 2차까지 다양한 음식을 준비할 수 있습니다. 후식으로 어떻게 활용할지는 아직 고민 중입니다."]
+
+결국, 이 지역 푸른 꽃게의 천적은 사람뿐이니, 사람이 꽃게를 먹어치우는 게 최선이라는 거죠.
+
+그렇다 해도, 모든 꽃게를 먹어치우는 건 가능하지도 않습니다.
+
+심지어 이 게, 1년에 최대 200만 개의 알을 낳는다는 학자들의 추정도 있습니다.
+
+1인당 게를 가장 많이 먹는 나라가 우리나라로 알려져 있습니다.
+
+우리나라는 오히려 꽃게 보호한다고, 1년 중 금어기를 두고, 포획 시기를 정해 둘 정도죠.
+
+지구촌에서 꽃게를 두고 한쪽에선 축제, 한쪽에선 재앙이라는 상반된 상황이 빚어지고 있습니다.
+
+KBS 뉴스 오승목입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:04:48), ArticleDTO(no=41, parent=0, comment=0, cate=free, title=짙어가는 중국 ‘침체’ 그림자…‘유령’ 대형마트까지, content=다음 달 폐점을 앞둔 베이징 도심의 한 대형마트.
+
+상품 진열대가 텅 비었고, 바닥은 오물로 뒤덮였습니다.
+
+현재 운영 중인 대형마트인데, 물건을 채워놓지 않아 사실상 폐점 상태입니다.
+
+중국도 이미 온라인 쇼핑이 대세로 자리 잡은 상황.
+
+여기에 소비자들이 지갑까지 닫으면서 대형마트 폐점이 잇따르는 겁니다.
+
+[중국 소비자 : "(중국인들의 소비 심리가 위축됐나요?) 관계가 있을 거예요. 쇼핑은 주로 중장년층이 하는 것 같아요."]
+
+베이징의 랜드마크 상업건물도 사정은 마찬가집니다.
+
+이 블럭 1층에서만 10곳 가운데 5곳이 이렇게 문을 닫았습니다.
+
+개업하자마자 폐업한 업체도 있을 만큼 사무 공간 상황은 더 심각합니다.
+
+3천 개가 넘는 사무실에 공실이 늘다 보니, 임대료가 지난해보다 최대 40%까지 하락했습니다.
+
+[부동산 중개인 : "임대료가 낮아요 이미 최저점입니다. 3년 임대하면 두 달은 무료로 해드려요."]
+
+기업들이 휘청대면서 일자리 사정도 좋지 않습니다.
+
+아침마다 열리는 인력시장은 일자리를 찾는 사람들로 늘 북적입니다.
+
+[구인업체 관계자 : "올해는 일자리를 찾는 사람이 많네요. 실업자가 많아져서 그래요. 보통 월 50~70만 원짜리 일자리에요."]
+
+지난 6월 중국의 청년 실업률이 21.3%로 사상 최대치를 경신하자 중국 정부는 실업률 통계 발표를 중단했습니다.
+
+코로나 이후 일시적으로 늘었던 중국의 소매판매증가율도 다시 내리막길을 걸었고, 올 7월까지 상업용 주택 매매 면적은 마이너스로 역성장했습니다.
+
+중국 정부는 최근 기준금리를 인하한데 이어 주택담보대출 금리 인하까지 시사하며 경제 재건 의지를 내비치고 있습니다.
+
+베이징에서 KBS 뉴스 김효신입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:04), ArticleDTO(no=40, parent=0, comment=0, cate=free, title='국민연금 보험료율, 0.6%p씩 올려 12~18%로 상향'…보고서 공개, content=(서울=연합뉴스) 김병규 기자 = 국민연금 개혁안을 논의하는 정부 내 전문가위원회가 보험료율을 끌어올리고 지급 개시(수급 시작) 연령은 늦추는 내용의 보고서를 내놨다.
+
+국민연금의 기금 소진 우려를 덜기 위해 '더 많이' 연금 보험료를 내면서 '더 늦게' 연금 수급을 시작하자는 개혁안으로, 보장성을 의미하는 소득대체율(연금가입 기간의 평균 소득 대비 받게 될 연금액의 비율) 상향 제안은 논의가 파행되면서 결국 빠졌다.
+
+보건복지부 산하 전문가위원회인 국민연금 재정계산위원회와 기금운용발전전문위원회는 1일 서울 코엑스에서 공청회를 열고 이런 내용의 '국민연금 제도개선 방향', '기금운용부문 개선사항' 보고서 초안을 공개했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:28), ArticleDTO(no=39, parent=0, comment=0, cate=free, title=정부, 론스타 ISDS 판정 취소 신청…`판정부 월권·규칙위반`, content=정부가 1일 외국계 사모펀드 론스타와의 외환은행 매각 관련 국제투자분쟁(ISDS) 중재판정에 불복해 취소신청을 제기했다. , fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:07), ArticleDTO(no=38, parent=0, comment=0, cate=free, title=태풍 영향으로 내일까지 남부지방 비…그치면 다시 더위, content=(서울=연합뉴스) 홍준석 기자 = 제11호 태풍 하이쿠이 영향으로 2일 낮까지 남부지방을 중심으로 비가 온 뒤에는 서쪽 지역에 다시 더위가 찾아오겠다. 3일에는 서쪽 지역에, 4∼5일에는 태백산맥 동쪽에 또 비가 내리겠다.
+
+1일 기상청에 따르면 하이쿠이는 오전 9시 현재 일본 오키나와 남남동쪽 300㎞ 해상을 지나 시속 18㎞로 서북서진 중이다.
+
+하이쿠이는 대만 타이베이 북동쪽 해상을 지나서 4일 중국 푸저우 부근에 상륙하고 5일 열대저압부로 약해지겠다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:23), ArticleDTO(no=37, parent=0, comment=0, cate=free, title=前언론노조위원장 압수수색…김만배 인터뷰 후 금품수수 혐의(종합), content=(서울=연합뉴스) 이보배 조다운 기자 = 검찰이 신학림 전 언론노조위원장이 화천대유자산관리 대주주 김만배 씨와 윤석열 대통령의 부산저축은행 사건 수사 무마 의혹에 대한 허위 인터뷰를 해주고 금품을 수수한 정황을 포착해 1일 강제수사에 나섰다.
+
+서울중앙지검 반부패수사3부(강백신 부장검사)는 이날 오전 신 전 위원장의 배임수·증재 및 청탁금지법 위반 혐의와 관련해 그의 주거지와 사무실 등 총 2곳을 압수수색하고 있다.
+
+검찰에 따르면 신 전 위원장은 윤 대통령이 검사 시절 부산저축은행 '대출 브로커' 조우형 씨의 검찰 수사를 무마해줬다는 취지로 김씨와 허위 인터뷰를 한 혐의를 받는다.
+
+해당 인터뷰는 20대 대선을 사흘 앞둔 지난해 3월6일 뉴스타파가 공개하면서 내용이 알려졌다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:38), ArticleDTO(no=36, parent=0, comment=0, cate=free, title=野, `오염수-홍범도` 쌍끌이 공세…``尹정부, 日과 환상적 호흡``, content=(서울=연합뉴스) 고상민 정윤주 기자 = 더불어민주당은 1일 '일본 후쿠시마 원전 오염수 방류'와 '홍범도 장군 흉상 이전' 논란을 앞세워 정부를 향해 쌍끌이 공세를 가했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:29), ArticleDTO(no=35, parent=0, comment=0, cate=free, title=여야 정기국회 일정 합의…5~8일 대정부질문·내달 10~27일 국감, content=(서울=연합뉴스) 안채원 기자 = 국민의힘 이양수·더불어민주당 송기헌 원내수석부대표는 1일 국회 로텐더홀에서 제410회 정기국회 의사일정 합의문을 발표했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:51), ArticleDTO(no=34, parent=0, comment=0, cate=free, title=외국인 가사관리사 이르면 12월 시범도입…서울시에 100명 규모, content=(서울=연합뉴스) 한혜원 기자 = 이르면 올해 12월부터 가사와 육아를 돕는 외국인 가사관리사 100명이 서울시에 시범 도입된다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:41:26)]
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : free
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 33
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:34.338+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 4
+2023-10-20T14:56:34.339+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:34.339+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:34.356+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:34.356+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:34.358+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:34.358+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:34.358+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:34.359+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:34.359+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:34.360+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:34.361+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.361+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.362+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.362+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:34.362+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:34.362+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:34.362+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:34.363+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:34.363+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:34.367+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.368+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.370+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:34.370+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.367+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.372+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:34.374+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.385+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:34.386+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:34.387+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.853+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=faq
+2023-10-20T14:56:34.854+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.855+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=faq
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=133, parent=0, comment=0, cate=faq, title=faq, content=faq, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:50:54)]
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : faq
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 1
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:34.882+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:34.901+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:34.902+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:34.903+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.904+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:34.904+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:34.905+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.905+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:34.906+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.906+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:34.907+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.907+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.908+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.909+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.911+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:34.916+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:34.917+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:34.918+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.252+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=event
+2023-10-20T14:56:35.255+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.255+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=event
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : []
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : event
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 0
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 0
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:35.268+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:35.291+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:35.291+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:35.292+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:35.293+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.293+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.294+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.295+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:35.296+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:35.296+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.296+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:35.297+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.297+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.298+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:35.300+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.300+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.307+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:35.307+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:35.308+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.621+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=qna
+2023-10-20T14:56:35.622+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.622+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=qna
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : []
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : qna
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 0
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 0
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:35.636+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:35.660+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:35.660+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:35.661+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:35.661+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:35.661+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:35.661+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:35.661+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:35.662+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:35.662+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.662+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:35.663+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:35.663+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:35.663+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:35.664+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:35.664+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.664+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:35.665+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:35.665+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:35.665+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.666+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.667+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.669+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.669+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.670+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.678+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:35.679+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:35.681+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.989+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=notice
+2023-10-20T14:56:35.991+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:35.991+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=notice
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=132, parent=0, comment=0, cate=notice, title=1, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:46:18), ArticleDTO(no=130, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:05:04), ArticleDTO(no=129, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T12:04:44), ArticleDTO(no=128, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:47:36), ArticleDTO(no=127, parent=0, comment=0, cate=notice, title=1234, content=1234, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T11:16:46)]
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : notice
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 5
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 1
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:36.008+09:00  INFO 17048 --- [http-nio-8080-exec-7] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:36.028+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:36.028+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:36.028+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:36.028+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:36.029+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:36.029+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:36.029+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:36.029+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:36.029+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:36.030+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:36.030+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:36.031+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:36.033+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.034+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.034+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.034+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:36.035+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:36.036+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:36.036+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:36.037+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.037+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.037+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.039+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.039+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.045+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:36.045+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:36.046+09:00 DEBUG 17048 --- [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.527+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /article/list?cate=free
+2023-10-20T14:56:36.527+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.528+09:00 DEBUG 17048 --- [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /article/list?cate=free
+2023-10-20T14:56:36.568+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO.dtoList : [ArticleDTO(no=131, parent=0, comment=0, cate=free, title=00000000011111111112222222222233333333334444444444445555555555566666666666777777777778888888889999999991010101010101111111111111212121212121212121313131313131313141414141414141415151515151515151616161616, content=1, fname=null, hit=0, writer=testUid, regip=0:0:0:0:0:0:0:1, rdate=2023-10-13T13:43:29), ArticleDTO(no=42, parent=0, comment=0, cate=free, title=“꽃게가 모든 것을 먹고 있다”…‘우린 축제 저긴 재앙’ [친절한 뉴스K], content=꽃게 철이 돌아왔습니다.
+
+인천 연평도에서는 내일부터 꽃게를 잡기 시작하고요.
+
+지난주 진작에 금어기가 해제된 충남 서해안에선, 이번 주말부터 축제를 여는 곳도 있습니다.
+
+지난해보다 수확량이 10% 더 늘었다는 소식도 들리는데요.
+
+그래서인지, 할인 행사하는 매장도 있습니다.
+
+그냥 쪄 먹어도 맛있고, 탕에 넣어 끓여 먹어도 풍미가 훌륭하죠.
+
+꽃게에는 타우린 성분이 많아 눈에도 좋고, 혈당이나 혈압을 낮춰 당뇨병이나 심장질환을 예방하는 데도 효능이 있는 것으로 알려져 있습니다.
+
+정말 없어서 못 먹는 꽃게, 그런데, "이 게가 모든 것을 파괴하고 재앙을 일으키는 중"이라며, 다른 세상 얘기처럼 골머리를 앓는 나라가 있습니다.
+
+이탈리아 동북부 베네토 주의 주지사가 취재진 앞에서 꺼내 들어 보인 건, 푸른 꽃게입니다.
+
+최근 이 지역 양식업계의 심각한 골칫거리인데요.
+
+개체 수가 너무 늘어났고, 날카로운 집게로 양식장 어망을 뜯어 애써 키운 조개 등을 잡아먹어 버린다고 합니다.
+
+[이탈리아 홍합 양식업자 : "꽃게가 모든 것을 먹고 있습니다. 동료 어부들도 아무것도 잡을 게 없다고 말합니다."]
+
+국가 차원의 '비상사태'라는 말까지 나왔습니다.
+
+이탈리아 정부는 290만 유로, 우리 돈 42억 원을 지원하며 포상금까지 걸었는데요.
+
+푸른 꽃게를 포획하고 전문적으로 폐기하는 사람에게 주겠다는 거죠.
+
+푸른 꽃게, 원래 대서양 서부에 서식하는데, 북미에서 유럽으로 항해하는 화물선을 타고, 이탈리아 해안이 있는 이 지중해에 퍼진 것으로 추정됩니다.
+
+문제는 이곳에 푸른 꽃게의 천적이 없다는 겁니다.
+
+빠른 속도로 이탈리아, 스페인 등의 연안으로 확산했죠.
+
+먹성도 엄청납니다.
+
+별명도 '바다 멧돼지'인데요.
+
+무게는 최대 1킬로그램까지 나가는데, 각종 조개는 물론 홍합과 굴까지 먹어치웁니다.
+
+이탈리아는 중국과 우리나라에 이어 세계 3위의 조개 생산국, 이 푸른 꽃게 때문에 양식업자와 어민들은 폐업 위기까지 처했다는데요.
+
+이러다 조개가 들어가는 봉골레 파스타, 못 먹는 것 아니냐는 말까지 나옵니다.
+
+어패류 요리가 발달했다지만, 이탈리아에서 꽃게는 그동안 조개와 비교하면 대중적인 식자재는 아니었는데요.
+
+이 생태계를 교란하는 외래종, 이탈리아의 대책은 결국, 역시 요리였습니다.
+
+새로운 메뉴를 개발해 식재료로 쓰자는 요식업계 분위기가 생겼습니다.
+
+[루카/레스토랑 운영 : "꽃게로 전채요리부터 1차, 2차까지 다양한 음식을 준비할 수 있습니다. 후식으로 어떻게 활용할지는 아직 고민 중입니다."]
+
+결국, 이 지역 푸른 꽃게의 천적은 사람뿐이니, 사람이 꽃게를 먹어치우는 게 최선이라는 거죠.
+
+그렇다 해도, 모든 꽃게를 먹어치우는 건 가능하지도 않습니다.
+
+심지어 이 게, 1년에 최대 200만 개의 알을 낳는다는 학자들의 추정도 있습니다.
+
+1인당 게를 가장 많이 먹는 나라가 우리나라로 알려져 있습니다.
+
+우리나라는 오히려 꽃게 보호한다고, 1년 중 금어기를 두고, 포획 시기를 정해 둘 정도죠.
+
+지구촌에서 꽃게를 두고 한쪽에선 축제, 한쪽에선 재앙이라는 상반된 상황이 빚어지고 있습니다.
+
+KBS 뉴스 오승목입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:04:48), ArticleDTO(no=41, parent=0, comment=0, cate=free, title=짙어가는 중국 ‘침체’ 그림자…‘유령’ 대형마트까지, content=다음 달 폐점을 앞둔 베이징 도심의 한 대형마트.
+
+상품 진열대가 텅 비었고, 바닥은 오물로 뒤덮였습니다.
+
+현재 운영 중인 대형마트인데, 물건을 채워놓지 않아 사실상 폐점 상태입니다.
+
+중국도 이미 온라인 쇼핑이 대세로 자리 잡은 상황.
+
+여기에 소비자들이 지갑까지 닫으면서 대형마트 폐점이 잇따르는 겁니다.
+
+[중국 소비자 : "(중국인들의 소비 심리가 위축됐나요?) 관계가 있을 거예요. 쇼핑은 주로 중장년층이 하는 것 같아요."]
+
+베이징의 랜드마크 상업건물도 사정은 마찬가집니다.
+
+이 블럭 1층에서만 10곳 가운데 5곳이 이렇게 문을 닫았습니다.
+
+개업하자마자 폐업한 업체도 있을 만큼 사무 공간 상황은 더 심각합니다.
+
+3천 개가 넘는 사무실에 공실이 늘다 보니, 임대료가 지난해보다 최대 40%까지 하락했습니다.
+
+[부동산 중개인 : "임대료가 낮아요 이미 최저점입니다. 3년 임대하면 두 달은 무료로 해드려요."]
+
+기업들이 휘청대면서 일자리 사정도 좋지 않습니다.
+
+아침마다 열리는 인력시장은 일자리를 찾는 사람들로 늘 북적입니다.
+
+[구인업체 관계자 : "올해는 일자리를 찾는 사람이 많네요. 실업자가 많아져서 그래요. 보통 월 50~70만 원짜리 일자리에요."]
+
+지난 6월 중국의 청년 실업률이 21.3%로 사상 최대치를 경신하자 중국 정부는 실업률 통계 발표를 중단했습니다.
+
+코로나 이후 일시적으로 늘었던 중국의 소매판매증가율도 다시 내리막길을 걸었고, 올 7월까지 상업용 주택 매매 면적은 마이너스로 역성장했습니다.
+
+중국 정부는 최근 기준금리를 인하한데 이어 주택담보대출 금리 인하까지 시사하며 경제 재건 의지를 내비치고 있습니다.
+
+베이징에서 KBS 뉴스 김효신입니다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:04), ArticleDTO(no=40, parent=0, comment=0, cate=free, title='국민연금 보험료율, 0.6%p씩 올려 12~18%로 상향'…보고서 공개, content=(서울=연합뉴스) 김병규 기자 = 국민연금 개혁안을 논의하는 정부 내 전문가위원회가 보험료율을 끌어올리고 지급 개시(수급 시작) 연령은 늦추는 내용의 보고서를 내놨다.
+
+국민연금의 기금 소진 우려를 덜기 위해 '더 많이' 연금 보험료를 내면서 '더 늦게' 연금 수급을 시작하자는 개혁안으로, 보장성을 의미하는 소득대체율(연금가입 기간의 평균 소득 대비 받게 될 연금액의 비율) 상향 제안은 논의가 파행되면서 결국 빠졌다.
+
+보건복지부 산하 전문가위원회인 국민연금 재정계산위원회와 기금운용발전전문위원회는 1일 서울 코엑스에서 공청회를 열고 이런 내용의 '국민연금 제도개선 방향', '기금운용부문 개선사항' 보고서 초안을 공개했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T02:05:28), ArticleDTO(no=39, parent=0, comment=0, cate=free, title=정부, 론스타 ISDS 판정 취소 신청…`판정부 월권·규칙위반`, content=정부가 1일 외국계 사모펀드 론스타와의 외환은행 매각 관련 국제투자분쟁(ISDS) 중재판정에 불복해 취소신청을 제기했다. , fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:07), ArticleDTO(no=38, parent=0, comment=0, cate=free, title=태풍 영향으로 내일까지 남부지방 비…그치면 다시 더위, content=(서울=연합뉴스) 홍준석 기자 = 제11호 태풍 하이쿠이 영향으로 2일 낮까지 남부지방을 중심으로 비가 온 뒤에는 서쪽 지역에 다시 더위가 찾아오겠다. 3일에는 서쪽 지역에, 4∼5일에는 태백산맥 동쪽에 또 비가 내리겠다.
+
+1일 기상청에 따르면 하이쿠이는 오전 9시 현재 일본 오키나와 남남동쪽 300㎞ 해상을 지나 시속 18㎞로 서북서진 중이다.
+
+하이쿠이는 대만 타이베이 북동쪽 해상을 지나서 4일 중국 푸저우 부근에 상륙하고 5일 열대저압부로 약해지겠다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:23), ArticleDTO(no=37, parent=0, comment=0, cate=free, title=前언론노조위원장 압수수색…김만배 인터뷰 후 금품수수 혐의(종합), content=(서울=연합뉴스) 이보배 조다운 기자 = 검찰이 신학림 전 언론노조위원장이 화천대유자산관리 대주주 김만배 씨와 윤석열 대통령의 부산저축은행 사건 수사 무마 의혹에 대한 허위 인터뷰를 해주고 금품을 수수한 정황을 포착해 1일 강제수사에 나섰다.
+
+서울중앙지검 반부패수사3부(강백신 부장검사)는 이날 오전 신 전 위원장의 배임수·증재 및 청탁금지법 위반 혐의와 관련해 그의 주거지와 사무실 등 총 2곳을 압수수색하고 있다.
+
+검찰에 따르면 신 전 위원장은 윤 대통령이 검사 시절 부산저축은행 '대출 브로커' 조우형 씨의 검찰 수사를 무마해줬다는 취지로 김씨와 허위 인터뷰를 한 혐의를 받는다.
+
+해당 인터뷰는 20대 대선을 사흘 앞둔 지난해 3월6일 뉴스타파가 공개하면서 내용이 알려졌다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:39:38), ArticleDTO(no=36, parent=0, comment=0, cate=free, title=野, `오염수-홍범도` 쌍끌이 공세…``尹정부, 日과 환상적 호흡``, content=(서울=연합뉴스) 고상민 정윤주 기자 = 더불어민주당은 1일 '일본 후쿠시마 원전 오염수 방류'와 '홍범도 장군 흉상 이전' 논란을 앞세워 정부를 향해 쌍끌이 공세를 가했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:29), ArticleDTO(no=35, parent=0, comment=0, cate=free, title=여야 정기국회 일정 합의…5~8일 대정부질문·내달 10~27일 국감, content=(서울=연합뉴스) 안채원 기자 = 국민의힘 이양수·더불어민주당 송기헌 원내수석부대표는 1일 국회 로텐더홀에서 제410회 정기국회 의사일정 합의문을 발표했다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:40:51), ArticleDTO(no=34, parent=0, comment=0, cate=free, title=외국인 가사관리사 이르면 12월 시범도입…서울시에 100명 규모, content=(서울=연합뉴스) 한혜원 기자 = 이르면 올해 12월부터 가사와 육아를 돕는 외국인 가사관리사 100명이 서울시에 시범 도입된다., fname=null, hit=0, writer=a12345, regip=0:0:0:0:0:0:0:1, rdate=2023-09-01T03:41:26)]
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO cate  : free
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO pg    : 1
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO size  : 10
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO total : 33
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO start : 1
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO end   : 4
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO prev  : false
+2023-10-20T14:56:36.569+09:00  INFO 17048 --- [http-nio-8080-exec-6] k.c.s.c.article.ArticleContorller        : testdebug_ pageResponseDTO next  : false
+2023-10-20T14:56:36.586+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:36.586+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/css/bootstrap.min.css
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dist/css/sb-admin-2.css
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:36.587+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.css
+2023-10-20T14:56:36.588+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/css/font-awesome.min.css
+2023-10-20T14:56:36.588+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:36.588+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /vendor/jquery/jquery.min.js
+2023-10-20T14:56:36.588+09:00 DEBUG 17048 --- [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.588+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /vendor/bootstrap/js/bootstrap.min.js
+2023-10-20T14:56:36.589+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:36.589+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.590+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:36.590+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /vendor/metisMenu/metisMenu.min.js
+2023-10-20T14:56:36.591+09:00 DEBUG 17048 --- [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.592+09:00 DEBUG 17048 --- [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.593+09:00 DEBUG 17048 --- [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.594+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /dist/js/sb-admin-2.js
+2023-10-20T14:56:36.594+09:00 DEBUG 17048 --- [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.595+09:00 DEBUG 17048 --- [http-nio-8080-exec-10] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.597+09:00 DEBUG 17048 --- [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
+2023-10-20T14:56:36.607+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:36.607+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /vendor/font-awesome/fonts/fontawesome-webfont.woff2?v=4.6.3
+2023-10-20T14:56:36.610+09:00 DEBUG 17048 --- [http-nio-8080-exec-1] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=MyUserDetails(user=kr.co.sboard.entity.UserEntity@1a627f58), Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=0:0:0:0:0:0:0:1, SessionId=BD25B802CEA4090CE830F62E0A2B5141], Granted Authorities=[ROLE_USER]]]
